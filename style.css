@@ -1,0 +1,102 @@
+/*Color del cuerpo de la página web*/
+/*Selector de tipo de etiqueta*/
+body{
+    background-color: rgb(44, 178, 251);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1{
+    color:rgb(209, 129, 24);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2, h4, h5{
+    color: #FF7F50;
+    margin-top: 20px;
+}
+
+/*Selector de tipo ID*/
+#titulo-cert{
+    color:crimson
+}
+
+/* Selector tipo clase*/
+.estilo-seccion{
+color: #5F9EA0;
+background-color: #F5F5DC;
+text-align: center;
+border-radius: 10px;
+padding: 20px;
+margin: 20px auto;
+max-width: 800px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Listas dentro de secciones */
+.estilo-seccion ol,
+.estilo-seccion ul {
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+    display: inline-block;
+    text-align: left;
+}
+
+.estilo-seccion ol li,
+.estilo-seccion ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+
+
+/* Estilos para imágenes */
+img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+/* Estilos del pie de página */
+#footer {
+    color: #5F9EA0;
+    background-color: #F5F5DC;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: larger;
+}
+
+/* Navegación en el encabezado */
+header nav {
+    text-align: center;
+}
+
+header nav ol {
+    display: inline-block;
+    padding: 0;
+}
+
+header nav ol li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ol li a {
+    text-decoration: none;
+    color: #5F9EA0;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ol li a:hover {
+    color: #D18118;
+}
