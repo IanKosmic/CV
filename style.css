@@ -261,3 +261,17 @@ img {
     background-color: crimson;
     color: #fff;
 }
+
+
+/*Media Querys*/
+@media screen and (max-width: 500px) {
+
+main {
+    padding: 1rem;
+}
+    
+footer {
+        padding: 1rem;
+        background-color: crimson;
+}
+} 
