@@ -265,13 +265,30 @@ img {
 
 /*Media Querys*/
 @media screen and (max-width: 500px) {
-
 main {
     padding: 1rem;
 }
     
-footer {
-        padding: 1rem;
-        background-color: crimson;
+.section-style h2 {
+    font-size: 1.5rem;
 }
-} 
+    
+ul.contacto {
+    flex-direction: column;
+    align-items: center;
+}
+    
+ul.contacto li {
+    width: 100%;
+}
+    
+footer {
+    padding: 1rem;
+    background-color: crimson;
+        }
+    
+.footer .contacto {
+    flex-direction: column;
+    align-items: center;
+}
+}
