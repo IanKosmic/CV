@@ -7,99 +7,140 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <title>Mi primera página web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
 </head>
 
-<body class="font">
-    <!-- Encabezado -->
-    <header class="estilo-seccion ol li">
-        <h1>Ian Yael López Poblano</h1>
-        <nav>
-            <h3>Índice:</h3>
+<body class="body">
+    <header class="header">
+        <h1 class="full-name">Ian Yael López Poblano</h1>
+        <nav class="nav">
             <ol>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#certificaciones">Certificaciones</a></li>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#exp-title">Experiencia Laboral</a></li>
+                <li><a href="#cert-title">Certificaciones</a></li>
                 <li><a href="#idiomas">Idiomas</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#programacion">Lenguajes de programación</a></li>
+                <li><a href="#lista-edu">Educación</a></li>
             </ol>
         </nav>
+        <section class="profile">
+            <img src="IMG/Cara.png" alt="Fotografía de Ian Yael López Poblano">
+            <p><strong>Mi nombre es Ian Yael, y soy Ingeniero en Sistemas.</strong></p>
+            <p>A lo largo de mi carrera, he brindado soporte técnico a diversas empresas e individuos, tanto en persona
+                como de manera remota. Esta experiencia me ha dado un alto nivel de adaptabilidad en mi enfoque laboral.
+            </p>
+        </section>
     </header>
 
-    <!-- Sección de presentación -->
-    <section>
-        <img class="image-profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUFXO4IAMJI0K3ChWRZPXZRF7gWCr5sSdegMju6NTnA&s"
-            alt="Imagen alternativa de Ian Yael" width="200">
-        <img src="/images/Cara.png" alt="Foto de Ian Yael" width="200">
-        <p class="profile-description">Mi nombre es <strong>Ian Yael</strong>, soy ingeniero de sistemas. A lo largo de mi carrera he brindado
-            soporte técnico a diversas empresas y particulares, tanto de forma presencial como remota; esta experiencia
-            me ha aportado un alto nivel de adaptabilidad en mi forma de trabajar.</p>
-    </section>
+    <main>
+        <section id="lista-exp" class="section-style">
+            <h2 id="exp-title">Experiencia Laboral</h2>
+            <div class="experience">
+                <h4>Compañía: LightboxOOH</h4>
+                <h6>2023/10 - 2024/03</h6>
+                <p>Dirigí el soporte técnico para la red de LightboxOOH, resolviendo problemas remotamente para
+                    pantallas LED, ALFREDS, y dandole servicio a hardware de publicidad en los supermercados y plazas
+                    comerciales.</p>
+                <p>Lideré la línea de ensamblaje de los dispositivos ALFRED, junto con el equipo de desarrollo y NOC,
+                    encargándome que el ensamblado y configuración de los dispositivos fuese la correcta.</p>
+            </div>
+            <div class="experience">
+                <h4>Compañía: The Functionary</h4>
+                <h6>2022/08 - 2023/03</h6>
+                <p>Brindé soporte técnico de Nivel 2 a cuatro empresas prominentes: Paycor, Premier, AM Greetings y
+                    Buck, atendiendo a clientes en Canadá, Estados Unidos, India e Inglaterra. Utilizando sistemas de
+                    tickets como ServiceNow, Jira y Cherwell, abordé una amplia gama de desafíos técnicos.</p>
+                <p>Esto incluyó la configuración de VPNs, nuevos dispositivos, routers Cisco, instalación de software
+                    corporativo, resolución de problemas de red y seguridad, despliegue de soluciones de software
+                    personalizadas, gestión de cuentas y dispositivos en Azure y Active Directory, configuración de
+                    conexiones RDP, impresoras y periféricos, así como el seguimiento y escalamiento de tickets de Nivel
+                    1 y 2.</p>
+            </div>
+            <div class="experience">
+                <h4>Compañía: TechMahindra</h4>
+                <h6>2021/08 - 2022/03</h6>
+                <p>Trabajé en Tech Mahindra, en la campaña TARGET donde proporcioné soporte técnico bilingüe a la
+                    Corporación TARGET. Mis responsabilidades incluyeron la resolución de incidentes relacionados con
+                    todo el hardware y dispositivos en TARGET, así como brindar soporte técnico y atención a TARGET
+                    corporate en todo Estados Unidos.</p>
+            </div>
+        </section>
 
-    <!-- Sección de educación -->
-    <section id="educacion" class="estilo-seccion">
-        <h2>Educación</h2>
-        <h4>Nombre de la universidad:</h4>
-        <h5>UVM COYOACÁN</h5>
-        <ul>
-            <li>Promedio: 8.9</li>
-            <li>Certificación obtenida: CISCO Meraki Configuration</li>
-        </ul>
-    </section>
+        <section id="lista-cert" class="section-style">
+            <h2 id="cert-title">Certificaciones</h2>
+            <div id="certificaciones">
+                <p>CENNI Advanced English Certificate</p>
+                <p>CISCO Meraki Network Certificate</p>
+                <p>DEV.F Full Stack Developer Certificate</p>
+            </div>
+        </section>
 
-    <!-- Sección de experiencia -->
-    <section id="experiencia" class="estilo-seccion">
-        <h2>Experiencia</h2>
-        <h4>The Functionary - Network Engineer</h4>
-        <p>Provided level 2 technical support for 4 companies, which were: Paycor, Premier, AM Greetings and Buck; The
-            clients were from Canada, the United States, India and England. Using Service Now and Cherwell as a
-            ticketing system, I assisted these clients with all their technical problems, to say a few: Setting up their
-            VPN, Cisco Jabber, Installing corporate programs, resolving network issues, security issues, installing
-            custom software, management of accounts and devices in Azure & Active Directory, configuration of RDP's,
-            printers and peripherals, tracking of tickets escalated by level 1, etc.</p>
+        <section id="lista-idiomas" class="section-style">
+            <h2>Idiomas</h2>
+            <div id="idiomas">
+                <p>Inglés Avanzado</p>
+                <p>Español Nativo</p>
+            </div>
+        </section>
 
-        <h4>Tech Mahindra - IT Help Desk L2</h4>
-        <p>I worked for the Tech Mahindra company, in the TARGET campaign, I gave bilingual technical support to the
-            TARGET corporate, solving their incidents that they presented with all their devices, accounts and security
-            systems, always using service now to follow up if necessary.</p>
-    </section>
+        <section id="lista-programacion" class="section-style">
+            <h2>Lenguajes de programación</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>PostgreSQL</li>
+                <li>Express.js</li>
+                <li>NoSQL</li>
+                <li>MongoDB</li>
+            </ul>
+        </section>
 
-    <!-- Sección de certificaciones -->
-    <section id="certificaciones" class="estilo-seccion">
-        <h2 id="titulo-cert">Certificaciones</h2>
-        <ul>
-            <li>Introducción a Java</li>
-            <li>CISCO MERAKI Network Manager</li>
-        </ul>
-    </section>
-
-    <!-- Sección de idiomas -->
-    <section id="idiomas" class="estilo-seccion ul li">
-        <h2>Idiomas</h2>
-        <ul>
-            <li>Español</li>
-            <li>Inglés</li>
-        </ul>
-    </section>
-
-    <!-- Sección de habilidades -->
-    <section id="habilidades" class="estilo-seccion ul li">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Perseverante</li>
-            <li>Multitareas</li>
-            <li>Eficiente</li>
-        </ul>
-    </section>
-
-    <!-- Pie de página -->
-    <footer id="footer">
-        <p><strong>Contáctame: 5544968947</strong></p>
-        <a href="https://www.instagram.com/__ian4ever/" target="_blank">Click aquí</a>
-    </footer>
-
+        <section id="lista-edu" class="section-style">
+            <h2>Educación</h2>
+            <div id="universidad">
+                <h3>UVM Coyoacán (Campus Sur)</h3>
+                <h6>Generación: 2018 - 2022</h6>
+                <p><strong>Ingeniería en Sistemas Computacionales</strong></p>
+            </div>
+        </section>
+    </main>
 </body>
+
+<footer>
+    <section id="lista-redes" class="section-style">
+        <h2>Ponte en contacto conmigo</h2>
+
+        <a href="https://wa.me/+525544968947" target="_blank" class="contacto" id="whatsapp">
+            <p>Whatsapp</p>
+            <img src="IMG/whatsapp.png" alt="Whatsapp" />
+        </a>
+
+        <a href="https://www.instagram.com/__ian4ever" target="_blank" class="contacto" id="Instagram">
+            <p>Instagram</p>
+            <img src="IMG/instagram.png" alt="Instagram" />
+        </a>
+
+        <a href="https://www.facebook.com/tu-ian4evr" target="_blank" class="contacto" id="Facebook">
+            <p>Facebook</p>
+            <img src="IMG/facebook.png" alt="Facebook" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/iankosmic" target="_blank" class="contacto" id="Linkedin">
+            <p>LinkedIn</p>
+            <img src="IMG/linkedin.png" alt="Linkedin" />
+        </a>
+
+        <a href="https://github.com/IanKosmic" target="_blank" class="contacto" id="Github">
+            <p>GitHub</p>
+            <img src="IMG/signo-de-github.png" alt="GitHub" />
+        </a>
+
+    </section>
+</footer>
+
 
 </html>

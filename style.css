@@ -1,102 +1,263 @@
-/*Color del cuerpo de la página web*/
-/*Selector de tipo de etiqueta*/
-body{
-    background-color: rgb(44, 178, 251);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f5f5f5;
     color: #333;
 }
 
-h1{
-    color:rgb(209, 129, 24);
+/* Header Styling */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2, h4, h5{
-    color: #FF7F50;
-    margin-top: 20px;
+.full-name {
+    color: crimson;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-/*Selector de tipo ID*/
-#titulo-cert{
-    color:crimson
+/* Navigation Styling */
+.nav {
+    margin: 1rem 0 0 1rem;
+    line-height: 200%;
 }
 
-/* Selector tipo clase*/
-.estilo-seccion{
-color: #5F9EA0;
-background-color: #F5F5DC;
-text-align: center;
-border-radius: 10px;
-padding: 20px;
-margin: 20px auto;
-max-width: 800px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-
-/* Listas dentro de secciones */
-.estilo-seccion ol,
-.estilo-seccion ul {
-    padding: 0;
-    margin: 10px 0;
-    text-align: left;
-    display: inline-block;
-    text-align: left;
-}
-
-.estilo-seccion ol li,
-.estilo-seccion ul li {
+.nav ol {
+    display: flex;
+    gap: 1rem;
+    padding: .2rem;
+    margin: .2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     list-style: none;
-    padding: 5px 0;
 }
 
-
-
-/* Estilos para imágenes */
-img {
-    width: 200px;
-    height: auto;
-    margin: 20px;
-    border-radius: 10px;
-
-}
-
-/* Estilos del pie de página */
-#footer {
-    color: #5F9EA0;
-    background-color: #F5F5DC;
-    text-align: center;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: larger;
-}
-
-/* Navegación en el encabezado */
-header nav {
-    text-align: center;
-}
-
-header nav ol {
-    display: inline-block;
-    padding: 0;
-}
-
-header nav ol li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ol li a {
+.nav li a {
+    color: midnightblue;
     text-decoration: none;
-    color: #5F9EA0;
-    font-weight: bold;
-    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    background-color: gainsboro;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-header nav ol li a:hover {
-    color: #D18118;
+.nav li a:hover {
+    background-color: crimson;
+    color: #fff;
+}
+
+/* Profile Section Styling */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Main Content Styling */
+main {
+    width: 100%;
+    max-width: auto 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section Styling */
+.section-style {
+    margin-bottom: 2rem;
+}
+
+.section-style h2 {
+    color: crimson;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-style h4,
+.section-style h6,
+.section-style h3,
+.section-style p {
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+ul.contacto {
+    display: flex;
+    gap: 1rem;
+    padding: .1rem;
+    margin: .1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+ul.contacto img {
+    width: 150px;
+    height: 150px;
+}
+
+ul.contacto li {
+    margin-bottom: 0.5rem;
+    margin: 10px auto;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.footer .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    margin: 1rem 0;
+    transition: transform 0.3s;
+}
+
+.footer .contacto img {
+    margin-bottom: 0.5rem;
+    width: 40px;
+    height: 40px;
+}
+
+.footer .contacto:hover {
+    transform: scale(1.05);
+}
+
+.footer .contacto:hover p {
+    color: crimson;
+}
+
+/* Redes Sociales Section Styling */
+#lista-redes.section-style {
+    width: 100%;
+    max-width: 800px auto;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    line-height: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#lista-redes.section.style p {
+    margin: 0;
+    padding: 0;
+    width: 100rem;
+
+}
+
+
+
+a#whatsapp.contacto,
+a#whatsapp.contacto p {
+    background-color: rgba(220, 20, 60, 0.1);
+    width: 100%;
+}
+
+a#Instagram.contacto,
+a#Instagram.contacto p {
+    background-color: rgba(25, 25, 112, 0.1);
+    width: 100%;
+}
+
+a#Facebook.contacto,
+a#Facebook.contacto p {
+    background-color: rgba(220, 20, 60, 0.1);
+    width: 100%;
+}
+
+a#Linkedin.contacto,
+a#Linkedin.contacto p {
+    background-color: rgba(25, 25, 112, 0.1);
+    width: 100%;
+}
+
+a#Github.contacto,
+a#Github.contacto p {
+    background-color: rgba(220, 20, 60, 0.1);
+    width: 100%;
+}
+
+
+
+/* Contact Section Styling */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto p,
+img {
+    margin-bottom: 1rem;
+    width: 25px;
+}
+
+.section-style ul li:hover {
+    background-color: crimson;
+    color: #fff;
 }
